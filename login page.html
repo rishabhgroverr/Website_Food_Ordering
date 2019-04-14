@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+</script>
+<a href="main_frame.html">
+</a>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<body>
+<div class="loginbox">
+<img src="3.jpg" class="avatar">
+<h1>Login Here</h1>
+<form>
+<p> <font color="white"><b>Username</b></font></p>
+<input id="username" type="text" name="" placeholder="Enter Username" >
+<p><font color="white"><b>Password</b></font></p>
+<input id="password" type="password" name="" placeholder="Enter Password">
+<input type="button" name="" id="jaadu" value="Login">
+
+<a href="#">Lost yor password?</a><br>
+<a href="signup.html">Don't have an Account?</a>
+</form>
+</div>
+
+<script type="text/javascript">
+
+	let log = [
+		{
+			id: 'rishabh',
+			pass: 'rishabh'
+		},
+		{
+			id:'ip',
+			pass: 'nano'
+		}
+	];
+
+
+	let jaadu =  document.getElementById('jaadu')
+
+	jaadu.addEventListener('click', function () {
+		let username = document.getElementById('username').value
+		let password = document.getElementById('password').value
+
+		console.log(log);
+		console.log(username);
+		console.log(password);
+		if(username == log[0].id && password == log[0].pass)
+			window.location.href= 'main_frame.html'
+		else if(username == log[1].id && password == log[1].pass)
+				window.location.href= 'main_frame.html'
+		else {
+			console.log(`yaha aaya hai`);
+			alert('Username and Password are incorrect');
+			window.location.href= 'login page.html'
+		}
+	})
+
+</script>
+
+</body>
+</head>
+</html>

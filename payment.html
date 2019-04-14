@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>
+		Main Frame
+	</title>
+
+		<link href='style2.css' rel='stylesheet'>
+		<ul>
+		    <li><a href="main_frame.html">Home</a></li>
+		    <li><a>Menu</a>
+		<ul>
+		   <li><a href="hotdog.html">Main Course</a></li>
+		   <li><a href="breakfast.html">Breakfast</a></li>
+		   <li><a href="burger.html">Snacks</a></li>
+		   <li><a href="shake.html">Beverages</a></li>
+		</ul>
+		</li>
+		<li><a>Account and Payments</a>
+		<ul>
+		<li><a href="a.html" style="color: white;text-decoration: none;">My Account</a></li>
+		<li><a href="payment.html">Go paying</a></li>
+		</ul>
+		</li>
+		<li><a href="about.html">Contact</a>
+		
+		</li>
+		</ul>
+</head><br><br>
+<body background="10.png" no-repeat>
+<div class="banner-bottom">
+<div class="container">
+<div class="view_plans">
+<div class="section_room_single">
+<h3><font color="white">Amount to be Added</h3>
+	<input type="text" id="amount" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+<h3><font color="white">Transaction ID : 1405980917</h3>
+</div>
+			<div class="clearfix"> </div>
+			<div id="verticalTab" class="resp-vtabs" style="display: block; width: 100%; margin: 0px;">
+					<div class="col-md-3 pay-left">
+						<p><b><font color="white">PAYEMENT METHODS</b></p><br>
+<input type="checkbox" value="crdit card">Credit Card<br><br>
+
+<input type="checkbox" value="debit card">Debit Card<br><br>
+
+<input type="checkbox" value="Paytm">Paytm<br><br>
+					</div>
+					<div class="col-md-9 pay-right">
+						<div class="resp-tabs-container">
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-0"></h2>
+								<div class="resp-tab-content" aria-labelledby="tab_item-0">
+									<div class="vertical_post">
+										<form>
+											<h5>Enter Card Number</h5>
+											<input type="text" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+											<div class="transaction">
+												<div class="tab-form-left user-form">
+													<h5>EXPIRY DATE</h5>
+														<ul>
+															<li>
+																<input type="number" class="text_box" value="6" min="1">
+															</li>
+															<li>
+																<input type="number" class="text_box" value="1988" min="1">
+															</li>
+														</ul>
+												</div>
+												<div class="tab-form-right user-form-rt">
+													<br><br><h5>CVV NUMBER</h5>
+													<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxx';}" required="">
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="single-check">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Save this card for faster checkout.</label>
+
+											</div>
+											<input type="button" id="paynow" value="PAY NOW">
+										</form>
+									</div>
+								</div>
+							
+							  <h2 class="resp-accordion" role="tab" aria-controls="tab_item-4"></h2><div class="new_posts resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="vertical_post">
+										<form>
+											<h4>For Paytm</h4>
+											<h6>ENTER MOBILE NUMBER (registered with Paytm)</h6>
+											<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+											<div class="transaction">
+												<div class="tab-form-left user-form">
+													<h5>Password</h5>
+														
+															
+																<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+														
+														
+												</div>
+												<div class="tab-form-right user-form-rt">
+													<h5>OTP</h5>
+													<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="single-check">
+												<input type="checkbox"  id="brand1" value="">
+												<label for="brand1"><span></span>Save this account for faster checkout.</label><br><br>
+												<input type="submit" value="PAY NOW">
+						<script type="text/javascript">
+							let paynow = document.getElementById('paynow')
+							paynow.addEventListener('click', function () {
+								// body...
+								let amount = document.getElementById('amount').value
+								localStorage.setItem('amount', amount)
+								window.location.href = 'a.html'c
+							})
+						</script>
+
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link href="stylex.css" rel="stylesheet" type="text/css">
+<style>
+
+ul {
+        
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+ul li{
+       
+	float:left;
+	width:300px;
+	height:40px;
+	background-color:Black;
+	opacity: .8;
+	line-height:40px;
+	text-align:center;
+	font-size:20px;
+	margin-right:20px;
+}
+
+.jaadu {  
+	float:left;
+	width:300px;
+	height:40px;
+	background-color:Black;
+	opacity: .8;
+	line-height:40px;
+	text-align:center;
+	font-size:20px;
+	margin-right:30px;
+}
+
+.bada-jaadu {
+	float: none;
+	line-height: normal;
+}
+
+ul li .a{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+ul li a:hover{
+	background-color:green;
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+display:block;
+}
+div.ab
+{
+background-color:white;
+border:1px solid white;
+margin:0% 10%;
+margin-top:5%;
+color:black;
+}
+
+td {
+	color: black;
+}
+</style>
+</head>
+<body>
+<div>
+		<div>
+			
+			<ul class ="a">
+		    <li><a style="color: white;text-decoration: none;" href="main_frame.html">Home</a></li>
+		    <li><a>Menu</a>
+		<ul>
+		   <li><a style="color: white;text-decoration: none;" href="hotdog.html">Main Course</a></li>
+		   <li><a style="color: white;text-decoration: none;" href="breakfast.html" >Breakfast</a></li>
+		   <li><a style="color: white;text-decoration: none;" href="burger.html">Snacks</a></li>
+		   <li><a style="color: white;text-decoration: none;" href="shake.html" >Beverages</a></li>
+		</ul>
+		</li>
+		<li><a >Account and Payments</a>
+		<ul>
+		<li><a href="a.html" style="color: white;text-decoration: none;">My Account</a></li>
+		<li><a style="color: white;text-decoration: none;" href="payment.html">Go paying</a></li>
+		</ul>
+		</li>
+		<li><a href="about.html">Contact</a>
+		
+		</li>
+		</ul>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<div class="a">
+<center>
+<font size="6" color="black"><b>Account Information</b></font>
+</center>
+<br>
+<br>
+</div>
+<div class="ab">
+<table border="1px" style="margin:0 0;border-collapse:collapse;width:100%;text-align:center">
+<tr>
+<td>
+<font color="black"><b>Customer Details</font></b>
+</td>
+<td>
+<font color="black"><b>Value</b></font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="black"><b>Name</font></b>
+</td>
+<td id="name">
+</td>
+</tr>
+<tr>
+<td>
+<font color="black"><b>Phone Number</font></b>
+</td>
+<td id="phone">
+</td>
+</tr>
+<tr>
+<td>
+<font color="black"><b>Card Number</font></b>
+</td>
+<td id="card">
+</td>
+</tr>
+<tr>
+<td>
+<font color="black"><b>Balance</font></b>
+</td>
+<td id="balance">
+</td>
+</tr>
+<tr>
+<td>
+<font color="black"><b>Current Order</font></b>
+</td>
+<td id="order">
+</td>
+</tr>
+</table>
+</div>
+
+<script type="text/javascript">
+	function ab() {
+		// body...
+		let name = localStorage.getItem('name')
+		let phone = localStorage.getItem('phone')
+		let card = localStorage.getItem('cardno')
+		let total = localStorage.getItem('total')
+		let amount = localStorage.getItem('amount')
+
+		let namecon = document.getElementById('name')
+		let phonecon = document.getElementById('phone')
+		let amountcon = document.getElementById('balance')
+		let cardcon = document.getElementById('card')
+		let ordercon = document.getElementById('order')
+		namecon.append(name)
+		amountcon.append(amount)
+		phonecon.append(phone)
+		cardcon.append(card)
+		ordercon.append(total)
+		console.log(name)
+	}
+	ab();
+</script>
+</body>
+</html>
