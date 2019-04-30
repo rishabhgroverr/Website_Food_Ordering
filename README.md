@@ -1,6 +1,8 @@
 # Website_Food_Ordering
 Technologies Used: HTML, CSS, JavaScript, JQuery.
 
+# Screenshots :
+
 ![Screenshot (465)](https://user-images.githubusercontent.com/26225907/56950725-c39fd400-6b53-11e9-8a3d-bbaa97863e87.png)
 
 ![Screenshot (466)](https://user-images.githubusercontent.com/26225907/56950740-d0242c80-6b53-11e9-8811-f4bd84918514.png)
